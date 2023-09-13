@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<h1>Mundiales_FIFA</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    //EJEMPLO_01 ========================
+    //var añoMundial = 1930;
+
+    //alert("hubo mundial de la FIFA en el año" + añoMundial)
+
+    //while (añoMundial < 2022){
+
+    //    alert("hubo mundial de la FIFA en el año" + añoMundial)
+
+    //   añoMundial = añoMundial + 4;
+    //}
+
+    //EJEMPLO_02 =========================
+    //var añoMundial = 1930;
+
+    //while (añoMundial < 2022){
+
+    //    imprimir("hubo mundial de la FIFA en el año" + añoMundial)
+
+    //    añoMundial = añoMundial + 4;
+           
+    //}
+    //EJEMPLO_03 ==========================
+     var añoMundial = 1930;
+     var limite = parseInt(prompt("ingrese el año limite para calcular mundiales FIFA"))
+
+    while (añoMundial <= limite){
+
+        imprimir("hubo mundial de la FIFA en el año" + añoMundial)
+
+        añoMundial = añoMundial + 4;
+           
+    }
+
+    alert("FIN")
+</script>

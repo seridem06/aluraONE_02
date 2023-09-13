@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+
+<h1>juego ==> ADIVINA</h1>
+ <script>
+     function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        
+    }
+
+    function imprimir(frase){
+
+        document.write(frase);
+        saltarlinea();
+    }
+
+
+    var numeroPensado = Math.round(Math.random()*10);
+    var intentos = 3;
+    var contador = 1;
+
+    while (contador <= intentos){
+
+        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0 - 10"));
+
+        if (numeroPensado == numeroLanzado){
+
+            alert("UD acertó 🎉 en el intento " + contador + " el número Pensado era " + numeroPensado);
+            break;  
+
+        }
+
+        else {
+
+            alert("UD erró 😜" );
+        }
+
+        contador++;
+
+        }
+
+         if (numeroPensado == numeroLanzado){
+
+            //imprimir("<h1>UD acertó 🎉 en el intento</h1>" + intentos + " el numero Pensado era:  " + numeroPensado);
+            imprimir("<h1>UD acertó 🎉en el intento");
+            imprimir("<h1>"+contador+"</h1>");
+            imprimir("<h1>El número Pensado era: </h1>");
+            imprimir("<h1>"+numeroPensado+"</h1>");
+
+        }
+
+        else {
+
+            imprimir("<h2>UD erró 😜 el número era: </h2>");
+            imprimir("<h1>"+numeroPensado+"</h1>");
+        }  
+
+         imprimir("<h1>Finish</h1>");
+    
+</script>

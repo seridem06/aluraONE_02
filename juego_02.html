@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<h1>juego_adivinar_02</h1>
+
+<script>
+
+    // funciones omitidas saltarLinea, imprimir, sortearNumero
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function sortearNumero() {
+
+        return Math.round(Math.random() * 10);
+    }   
+    var numeroPensado = sortearNumero();
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10: "));
+
+    if(numeroLanzado  == numeroPensado) {
+
+        imprimir("<h1>👍Uau! Vos acertaste, pues yo pensé en el número 🎉</h1>" + numeroPensado);
+    } else {
+        var contador = 1;
+
+        while(contador <= 10) {
+
+               imprimir("<h1>¡Se acabó, vos erraste!🤦‍♀️</h1>");
+               contador = contador +1;
+        }
+    }
+</script>

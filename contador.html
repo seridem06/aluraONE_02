@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h1>contador</h1>
+
+<script>
+
+    // funciones omitidas saltarLinea, imprimir, sortearNumero
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+
+    imprimir("while");
+
+    var contador = 1;
+    while(contador <= 10) {
+    alert("Contador actual: " + contador);
+    contador = contador + 1;
+    }
+
+    imprimir("for");
+
+    for( var contador = 1; contador <= 10; contador++ ) {
+    imprimir("Contador actual: " + contador);
+}
+
+
+</script>

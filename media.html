@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<h1>calcular_media</h1>
+
+<script>
+
+    // funciones omitidas saltarLinea, imprimir, sortearNumero
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+    //EJEMPLO_01===================================
+    //var edadPadre = 42;
+    //var edadMadre = 38;
+    //var edadHijo = 15;
+    //var edadHija = 12;
+
+    //var totalEdad = edadPadre + edadMadre + edadHijo + edadHija;
+
+    //var mediaEdad = totalEdad/4;
+
+    //imprimir("la edad media de las edades es: " + mediaEdad);
+
+    //EJEMPLO_02===================================
+
+    var númeroMiembros = parseInt(prompt("ingrese la cantidad mienbros de su familia"));
+    var contador = 1;
+    var totalEdades = 0
+
+    while (contador <= númeroMiembros) {
+
+       
+        edad = parseInt(prompt("Ingrese la edad del familiar"))
+        totalEdades = totalEdades + edad
+        contador++;
+
+    }
+
+    var mediaEdades = totalEdades/númeroMiembros;
+    imprimir("La suma de edades de los " + númeroMiembros + " mienbros es: "+ totalEdades);
+    imprimir("la media de los " + númeroMiembros + " mienbros es: " + mediaEdades );
+    imprimir("FIN");
+
+</script>

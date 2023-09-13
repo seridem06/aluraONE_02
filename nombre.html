@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var respuesta = ""; // todavía no hay respuesta
+
+    while(true) {
+        
+        respuesta = prompt("¿Cuál es tu nombre?");
+        
+        if( respuesta == "FRANK") {
+            break;
+        }else {
+         alert("😒INCORRECTO😒...intenta de nuevo...EL NOMBRE NO ES ===> " + respuesta);
+        }
+    }
+
+    imprimir("<H1>BIENVENIDO</h1>");
+    imprimir("<h1>"+respuesta+"</h1>");
+</script>

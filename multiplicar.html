@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<h1>tabla_multiplicar</h1>
+
+<script>
+
+    // funciones omitidas saltarLinea, imprimir, sortearNumero
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var multiplicador = 1
+
+    imprimir (" WHILE ");
+
+ 
+    while (multiplicador <=12){
+
+        imprimir(5 *  multiplicador );
+        multiplicador = multiplicador + 1;
+
+    }
+
+    imprimir (" FOR ")
+
+    for(var multiplicador = 1; multiplicador <= 12; 
+        multiplicador = multiplicador + 1){
+
+        imprimir(5 * multiplicador);
+    }
+
+
+
+</script>
